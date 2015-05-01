@@ -1,0 +1,36 @@
+(Learn how to setup and use git in windows i.e unix like command line,coz workspace may force me to use windows)
+
+
+1. )How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+diff decreased the amount of effort I would have had to manually search through the big file to find out typos like spacr!
+
+2.)How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+If I have an easy access to the entire history of a file, I would be able to easily recover any particular file in the past, which might have had a particular solution/feature I may have removed. I would also be able to easily fix bugs and errors that might have been introduced in the later versions.
+
+3.)What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros 
+Flexibility and Logical- I get to choose when to make the commit, so I can decide what is a logical commit and what is not
+Avoid clutter - Can avoid over cluttering of unnecessary commit histories, which can happen with an automatically saved commit. 
+Cons
+User induced bias - I can commit too less or too often and programmers can make the mistake of not making logical commits.
+
+
+4.) Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Version control systems like Google docs are specifically made for document files. Such document files, mostly do not have the need for related changes between multiple documents in a single submission (commit). In the case of Git, it is not the case. Eg - a certain program may only work if multiple files function together and hence, it is necessary to track changes within ALL those files.
+
+5.)How can you use the commands git log and git diff to view the history of files?
+After cloning the repository, using git clone <github repo link> into a folder, CD to that and then type 'git log' to view the commit history. use git diff <Id of the first commmit> <space> <Id of the second commit> to see the differences between to two commits.
+
+git checkout <Id> change current commit to that particular commit
+
+6.) How might using version control make you more confident to make changes that could break something?
+Even if I make changes that could break something, i could easily revert back to a previous commit (till now I only know git checkout)
+
+
+7.)Now that you have your workspace set up, what do you want to try using Git for?
+
+Ideally my own large website project, but of course, whatever ;)
