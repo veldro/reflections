@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When I initialize a repository, it is basically making a repository out of that particular directory. A .git metadata file is added to the directory, which keeps track of the commits, later on. All files are untracked initially. 
