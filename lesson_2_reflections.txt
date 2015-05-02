@@ -6,3 +6,29 @@ When I initialize a repository, it is basically making a repository out of that 
 2.) How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 A staging area is basically the intermediate step between the working directory and the repository. You decide what files are to be commited into the repository from the working directory and put it in to the "staging area" before making the commit
+
+3.) How can you use the staging area to make sure you have one commit per logical change?
+
+I can use the staging area to make sure I have one commit per logical change by adding only those files to the staging area that I wish to commit at that point (i.e one file will have one, small, logical change). Other files can be added for the next commit and so on.
+
+4.)What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches are labels given to the latest commits. Branches would be useful in situations like for example where you want to run an experimental version, without changing the original. The original could also have new commits, without affecting this new branch version and then later the two branches could also merge!!
+
+use branch to move to a different piece of work. Context switching. New feature, correct a bug, etc. Its particularly useful when you share your work publicly.
+The master branch is production quality that never breaks.
+Development branch, experimental branch. Unique feature branches, fully expected to break.
+This is not just useful publicly, but also on your own 
+
+5.) How do the diagrams help you visualize the branch structure?
+
+Diagrams make it exponentially easier to visalize the branch structure. Now I have a clearer idea how the structure works. I also understand how certain commits which are not part of any branch (detached head warning) can get lost and also how new commits can be created from there.
+
+6.) What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+After merging two branches together, the changes from both branches are included into the new merged branch. The branching process works like the following -
+The changes are first checked against parent commit(from where it first branched off) remember the ABCD ABED, that example from udacity.
+
+7.) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging - Git automatically does the merging for you. We neednt worry about which code needs to be included and such
+Manual merging - Gives us the advantage of conflict resolution and we can also specify which code to include and such
+
